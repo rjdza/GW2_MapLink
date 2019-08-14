@@ -66,12 +66,15 @@ rem  --upx-dir dist
 rem SysInfoDashboard.spec
 
 rem     --onefile ^
+rem     -i dist\dash-ico-01.ico ^
+rem     --icon dist\dash-ico-01.ico ^
+
 
 python -m PyInstaller ^
     --onefile ^
-    --add-binary dist\dash-ico-01.ico;. ^
-    -i dist\dash-ico-01.ico ^
-    --icon dist\dash-ico-01.ico ^
+    -i     assets\gw2_icon.ico ^
+    --icon assets\gw2_icon.ico ^
+    --add-binary assets\gw2_icon.ico;. ^
     --clean ^
     --console ^
     --name SysInfoDashboard^

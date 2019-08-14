@@ -7,11 +7,12 @@ base = None
 if sys.platform == "win32":
     base = "Win32GUI"
 
-executables = [Executable("GW2_MappingTool.py", base=base, targetName="GW2_MappingTool.exe", icon = "assets\\appico-01.ico")]
+executables = [Executable("GW2_MappingTool.py", base=base, targetName="GW2_MappingTool.exe", icon = "assets\\gw2_icon.ico")]
 
 #Any packages that need to be added for compilation.
 #Some may work but if not include them here
-packages = ["Client"]
+# packages = ["Client"]
+packages = []
 
 options = {
     'build_exe': {
